@@ -1,0 +1,95 @@
+@import '../../styles/constants.module.scss';
+
+.navbar{
+    height: 65px;
+    background-color: $amazon-black;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 999;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint(laptop){
+        padding: 5px;
+    }
+    @include breakpoint(tablet){
+        padding: 5px;
+    }
+    @include breakpoint(phablet){
+        padding: 5px 0px;
+    }
+}
+
+.navbar__logo{
+    cursor: pointer;
+}
+
+.userAdress{
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.75px;
+    h4{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 700;
+        color: white;
+        @include breakpoint(laptop){
+            font-size: 12px;
+            line-height: 13px;
+        }
+        @include breakpoint(tablet){
+            display: none;
+        }
+
+        @include breakpoint(phablet){
+            display: none;
+        }
+        @include breakpoint(mobile){
+            display: none;
+        }
+        
+    }
+    h5{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #cccccc;
+        @include breakpoint(laptop){
+            font-size: 10px;
+            line-height: 11px;
+        }
+        @include breakpoint(tablet) {
+            display: none;
+        }
+        @include breakpoint(phablet){
+            display: none;
+        }
+        @include breakpoint(mobile){
+            display: none;
+        }
+    }
+    h6{
+        background-color: $amazon-darkOrange;
+        padding: 1px 5px;
+        border-radius: 100%;
+        position: absolute;
+        margin-left: 14px;
+        margin-bottom: 45px;
+    }
+}
+
+.shoppingCart{
+    @extend .userAdress;
+    h4,h5{
+        @include breakpoint(laptop){
+            display: none;
+        }
+    }
+   
+
+}

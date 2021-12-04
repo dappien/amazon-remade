@@ -1,0 +1,26 @@
+.populars{
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    width: 98%;
+    top: 400px;
+    position: relative;
+    margin-left: 1.5%;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.plus{
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, -50%);
+    margin: auto;
+    opacity: 0;
+    transition: all 0.4s;
+    &:hover{
+        opacity: 1;
+    }
+}

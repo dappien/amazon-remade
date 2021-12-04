@@ -1,0 +1,57 @@
+@import '../../styles/constants.module.scss';
+
+.slider{
+    position: absolute;
+    z-index: 99;
+    margin-top: 50px;
+    width: 80vw;
+    height: 600px;
+   
+   
+    @include breakpoint(tablet){
+        width: 100vw;
+        margin-left: 0;
+    }
+    @include breakpoint(phablet){
+        width: 100vw;
+        margin-left: 0;
+        margin-top:40px ;
+    }
+    @include breakpoint(mobile){
+        width: 100vw;
+        margin-left: 0;
+        margin-top:40px ;
+        height: 200px;
+    }
+}
+
+.buttonBlock{
+    position:absolute;
+    top:25%;
+    z-index: 9;
+    width: 96%;
+    margin-left: 2%;
+    justify-content: space-between;
+    display: flex;    
+}
+
+.singleButton{
+    cursor: pointer;
+}
+
+.banner{
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to top, transparent 5%,black 45%);
+    @include breakpoint(tablet){
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to top, transparent 5%,black 25%);
+    }
+    @include breakpoint(phablet){
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to top, transparent 5%,black 25%);
+    }
+    @include breakpoint(mobile){
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to top, transparent 5%,black 25%);
+    }
+}

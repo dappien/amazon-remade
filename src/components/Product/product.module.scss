@@ -1,0 +1,59 @@
+@import '../../styles/constants.module.scss';
+
+.product{
+    width: 350px;
+    height: 425px;
+    background-color: white;
+    padding: 20px 15px;
+    z-index: 99;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    h3{
+        font-size: 21px;
+        line-height: 27px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    img{
+        
+        height: 120px;
+        width: 150px;
+    }
+
+    h5{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 19px;
+        color:#44adc7;
+        margin-top: 10px;
+        margin-bottom: 0;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.imageBlock{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    
+}
+
+.singleImageBlock{
+    cursor: pointer;
+    h2{
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+}
+
+.singleImage{
+    cursor: pointer;
+}

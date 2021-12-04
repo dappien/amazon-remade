@@ -1,0 +1,27 @@
+@import '../../styles/constants.module.scss';
+
+.categories{
+    display: flex;
+    width: 100%;
+    background-color: $amazon-navy;
+    position: fixed;
+    top:65px;
+    z-index: 999;
+    @include breakpoint(phablet){
+        overflow-x: scroll;
+        overflow: hidden;
+        top:120px;
+    }
+    @include breakpoint(mobile){
+        overflow-x: scroll;
+        top:120px;
+    }
+    h3{
+        font-size: 14px;
+        line-height: 14px;
+        padding: 0px 15px;
+        font-weight: 400;
+        color: white;
+        white-space: nowrap;
+    }
+}

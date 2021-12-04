@@ -1,0 +1,61 @@
+
+//COLORS 
+$amazon-orange:#FEBD69;
+$amazon-navy:#232F3E;
+$amazon-blue:#37475A;
+$amazon-black:#131A22;
+$amazon-grey:#EAEDED;
+$amazon-darkOrange:rgb(255, 166, 0);
+
+//BREAKPOINTS
+/*
+    example usage
+        .podcasts {
+            margin: 1em auto;
+            @include breakpoint(phablet){
+            width: 100%;
+            }
+            @include breakpoint(desktop){
+                // maybe some desktop layout styles.
+            }
+        }
+    */
+
+
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+      @media (min-width: 1201px) { @content ; }
+   }
+    @else if $point == laptop {
+      @media (min-width: 1025px) and (max-width: 1200px) { @content ; }
+   }
+     @else if $point == tablet {
+      @media (min-width: 769px) and (max-width: 1024px) { @content ; }
+   }
+    @else if $point == phablet {
+      @media (min-width: 481px) and (max-width: 768px) { @content ; }
+   }
+   @else if $point == mobile {
+      @media (max-width: 480px)  { @content ; }
+   }
+ }
+
+ .container{
+   width: 80%;
+   height: 100vh;
+   margin-left: 10%;
+ }
+
+ .productContainer{
+  width: 98%;
+  top: 400px;
+  position: relative;
+  margin-left: 1.5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+ }
