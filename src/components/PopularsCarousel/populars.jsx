@@ -38,7 +38,7 @@ function Populars({products}) {
          transitionDuration={100}
          containerClass="carousel-container"
         >
-          {products.map((product)=>(
+          {products.map((product,id)=>(
               // <div style={style}>{product.title}</div>
               <div>
                 <Image
@@ -47,7 +47,8 @@ function Populars({products}) {
                   src={product.image}
                   alt={product.description} 
                   key={product.id}
-                  className={styles.productImage}             
+                  className={styles.productImage}   
+                  key={id}          
                 />
               
                 <UilPlusCircle className={styles.plus} size="100" color="#ffa600"/>

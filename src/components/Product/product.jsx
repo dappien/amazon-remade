@@ -2,7 +2,7 @@ import React from 'react'
 import style from './product.module.scss'
 import Image from 'next/image';
 
-function product(props){
+function Product(props){
 
  const images=props.images;
  const singleImages=props.singleImages;
@@ -21,7 +21,9 @@ function product(props){
                                 src={props.images[id]}
                                 width={150}
                                 height={105}
-                                alt="" 
+                                alt="image"
+                                id={id} 
+                                key={id}
                             />
                            {props.headlines && (
                                 <h2>{props.headlines[id]}</h2>
@@ -35,7 +37,9 @@ function product(props){
                 src={singleImages}
                 width={320}
                 height={300}
-                className={style.singleImage} 
+                className={style.singleImage}
+                alt="image"
+                id={1} 
             />
             )}
          
@@ -46,4 +50,4 @@ function product(props){
     )
 }
 
-export default product
+export default Product

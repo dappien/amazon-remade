@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './navbar__resp.module.scss'
 import { UilUser,UilShoppingCartAlt } from '@iconscout/react-unicons'
 
-function navbar__resp() {
+function Navbar__resp() {
     
     return (
         <div className={styles.navbar__resp}>
@@ -16,6 +16,8 @@ function navbar__resp() {
                     height={45}
                     objectFit="contain"
                     loading="eager"
+                    alt="image"
+                    id={1}
                 />
                 <div className={styles.logoBlock}>
                     <div className={styles.accountBlock}>
@@ -30,4 +32,4 @@ function navbar__resp() {
     )
 }
 
-export default navbar__resp
+export default Navbar__resp

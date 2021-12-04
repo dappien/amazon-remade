@@ -17,7 +17,7 @@ function Slider() {
         swipeOptions={{ continuous: true ,auto:4500,speed:500}}
         ref={el => (reactSwipeEl = el)}
       >
-        {CarouselImages.map((image) => (
+        {CarouselImages.map((image,id) => (
           <div >
             <Image
               src={image}
@@ -26,7 +26,9 @@ function Slider() {
               objectFit="contain"
               layout="responsive"
               className={style.banner}
-              alt=""
+              alt="image"
+              id={id}
+              key={id}
                
             />
           </div>

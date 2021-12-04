@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./input.module.scss";
 import { UilSearch } from '@iconscout/react-unicons'
-function input() {
+function Input() {
   return (
     <div className={styles.searchBar}>
       <select id="cars">
@@ -31,4 +31,4 @@ function input() {
   );
 }
 
-export default input;
+export default Input;

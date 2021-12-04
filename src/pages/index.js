@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar/navbar'
 import styles from '../styles/constants.module.scss'
-import useWindowSize from '../hooks/useWindowSize'
+import UseWindowSize from '../hooks/useWindowSize'
 import Navbar__resp from '../components/Navbar/navbar__resp'
 import Categories from'../components/CategoriesBar/categories'
 import Gallery from '../components/Slider/slider'
@@ -11,7 +11,7 @@ import {imageSources1,imageSources2,imageSources3,imageSources4,
 import Populars from '../components/PopularsCarousel/populars'
 
 export default function Home({products}) {
-  const size = useWindowSize();
+  const size = UseWindowSize();
   const headlines1=["Headsets","Keyboards","Computer mice","Chairs"]
   const headlines2=["Computers & Accesories","Video Games","Baby","Toys & Games"]
   const headlines3=["Electronics","Fashion","Toys","Beauty"]

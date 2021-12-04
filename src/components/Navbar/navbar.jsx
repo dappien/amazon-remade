@@ -5,7 +5,7 @@ import { UilLocationPoint,UilShoppingCartAlt,UilUser} from '@iconscout/react-uni
 import useWindowSize from '../../hooks/useWindowSize'
 import Input from './input'
 
-function navbar() {
+function Navbar() {
     const size = useWindowSize();
     return (
         <div className={styles.navbar}>
@@ -65,4 +65,4 @@ function navbar() {
     )
 }
 
-export default navbar
+export default Navbar
