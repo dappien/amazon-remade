@@ -1,10 +1,10 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBdInmqa9bDgrIxojBtoSqa0uh5Y4ZdO9g",
-    authDomain: "amzn-remade.firebaseapp.com",
-    projectId: "amzn-remade",
-    storageBucket: "amzn-remade.appspot.com",
-    messagingSenderId: "176049921316",
-    appId: "1:176049921316:web:96498fb78f7e6ec5b267b1"
+  apiKey: "AIzaSyC2Ui3CyD9tRthxR3KfM4XSmOn9OjXT5fI",
+  authDomain: "amznn-remade.firebaseapp.com",
+  projectId: "amznn-remade",
+  storageBucket: "amznn-remade.appspot.com",
+  messagingSenderId: "793791557184",
+  appId: "1:793791557184:web:c8b0ef522e76ea327b39a5"
   };
