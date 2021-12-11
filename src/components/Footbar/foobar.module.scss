@@ -1,0 +1,70 @@
+@import '../../styles/constants.module.scss';
+
+.foobar{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 700px;
+    z-index: 999;
+    cursor: pointer;
+    @include breakpoint(tablet){
+        margin-top: -120px;
+    }
+    @include breakpoint(phablet){
+        margin-top: 120px;
+    }
+    @include breakpoint(mobile){
+        margin-top: -140px;
+      
+    }
+}
+
+.foobarTop{
+    height: 50px;
+    padding: 15px 45%;
+    background-color: $amazon-blue;
+    color: white;
+    transition: all 0.4s;
+    &:hover{
+        background-color:rgba($amazon-blue,0.9);
+    }
+    @include breakpoint(phablet){
+        padding-left: 45%;
+        padding-right: 35%;
+    }
+    @include breakpoint(mobile){
+        padding-left: 35%;
+        padding-right: 15%;
+    }
+}
+
+.foobarBottom{
+    background-color: $amazon-navy;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30%;
+    padding-right: 35%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    h4{
+        color: white;
+        margin-left: 10px;
+        font-weight: 400;
+    }
+    div{
+        display: flex;
+        align-items: center;
+    }
+    @include breakpoint(tablet){
+        padding-left: 30%;
+        padding-right: 35%;
+    }
+    @include breakpoint(phablet){
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    @include breakpoint(mobile){
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

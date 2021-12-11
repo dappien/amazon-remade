@@ -35,6 +35,8 @@ export const imageSources1=[
     "https://res.cloudinary.com/droheqpxn/image/upload/v1638489267/Fuji_Dash_WomenFashion_Tees_Quad_Cat_1x._SY116_CB418608878__e6nbkt.jpg"
   ]
 
+  export const concatedImageSources =imageSources1.concat(imageSources2,imageSources3,imageSources4);
+  
   export const singleImage1="https://res.cloudinary.com/droheqpxn/image/upload/v1638489555/Fuji_Hol21_EDD_DB._SY304_CB651632738__s8idjt.jpg"
   export const singleImage2="https://res.cloudinary.com/droheqpxn/image/upload/v1638489628/Fuji_Dash_Deals_1x._SY304_CB430401028__u7v1as.jpg"
   export const singleImage3="https://res.cloudinary.com/droheqpxn/image/upload/v1638489701/XCM_CUTTLE_1370663_1923434_CA_379x304_1X_en_CA._SY304_CB654091123__pwgizc.jpg"

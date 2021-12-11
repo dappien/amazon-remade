@@ -6,14 +6,16 @@
     background-color: $amazon-navy;
     position: fixed;
     top:65px;
-    z-index: 999;
+    z-index: 9999;
+    padding: 10px;
     @include breakpoint(phablet){
         overflow-x: scroll;
         overflow: hidden;
         top:120px;
+       
     }
     @include breakpoint(mobile){
-        overflow-x: scroll;
+        
         top:120px;
     }
     h3{

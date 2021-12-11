@@ -1,0 +1,153 @@
+@import '../../styles/constants.module.scss';
+
+.Sidebar{
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px ;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.price{
+    margin:0;
+    font-size: 18px;
+    line-height: 24px;
+    color:#b12704;
+    font-weight: 400;
+}
+
+.detail{
+    font-size: 14px;
+    line-height: 20px;
+    color:#565959;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.adress{
+    font-size: 12px;
+    line-height: 18px;
+    color:#5596c2;
+    font-weight: 400;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.stock{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color:#b12704;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.option{
+    border: 2px solid rgb(0, 195, 255);
+    border-radius: 5px ;
+    margin-top:10px;
+    margin-bottom: 10px;
+    option{
+        border: 2px solid rgb(0, 195, 255);
+        border-radius: 5px ;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+}
+
+.cartButton{
+    width: 100%;
+    background-color: #F7CA00;
+    padding: 7.5px 0;
+    margin-bottom: 10px;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover{
+        background-color: #ffd622;
+    }
+}
+
+.buyButton{
+    width: 100%;
+    background-color: #FA8900;
+    padding: 7.5px 0;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover{
+        background-color: #e99127;
+    }
+}
+
+.secure{
+    font-size: 14px;
+    line-height: 20px;
+    color:#5596c2;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.transportion{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    h4{
+        font-size:12px;
+        line-height: 16px;
+        color: #565959;
+        margin-right: 10px;
+        font-weight: 400;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    h5{
+        font-size:12px;
+        line-height: 16px;
+        font-weight: 400;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.policy{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    h4{
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        margin-right: 5px;
+    }
+    h5{
+        word-break: break-all;
+        font-size: 14px;
+        line-height: 20px;
+        color:#5596c2;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+}
+
+
+.checkmark{
+    font-size: 14px;
+    display: flex;
+}
+
+.addButton{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    cursor: pointer;
+}

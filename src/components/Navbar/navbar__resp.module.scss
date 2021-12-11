@@ -4,8 +4,10 @@
     background-color: $amazon-black;
     width: 100%;
     padding: 5px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top:0;
+    z-index: 9999;
 }
 
 .top__resp{
@@ -20,10 +22,20 @@
     display: flex;
     align-items: center;
     margin-right: 5px;
+    h6{
+        background-color: $amazon-darkOrange;
+        padding: 1px 5px;
+        border-radius: 100%;
+        position: absolute;
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
 }
 .accountBlock{
     @extend .logoBlock;
     h4{
         margin-right: 5px;
+        text-transform: uppercase;
     }
 }
+

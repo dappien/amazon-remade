@@ -45,6 +45,18 @@ $amazon-darkOrange:rgb(255, 166, 0);
    width: 80%;
    height: 100vh;
    margin-left: 10%;
+   @include breakpoint(tablet){
+     width:100%;
+    margin-left: 0;
+   }
+   @include breakpoint(phablet){
+    width:100%;
+   margin-left: 0;
+  }
+  @include breakpoint(mobile){
+    width:100%;
+   margin-left: 0;
+  }
  }
 
  .productContainer{
@@ -57,5 +69,36 @@ $amazon-darkOrange:rgb(255, 166, 0);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  
+  @include breakpoint(tablet){
+    top:300px;
+    width: 98%;
+    margin-left: 1%;
+  }
+  @include breakpoint(phablet){
+    top:600px;
+    width: 98%;
+    margin-left: 1%;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  @include breakpoint(mobile){
+    top:465px;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-left: 0;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+  }
  }
+
+.populars{
+  padding-bottom: 600px;
+  @include breakpoint(tablet){
+    padding-bottom: 450px;
+  }
+  @include breakpoint(phablet){
+    padding-bottom: 500px;
+  }
+}
+

@@ -1,3 +1,5 @@
+@import '../../styles/constants.module.scss';
+
 .populars{
     height: 280px;
     background-color: rgb(255, 255, 255);
@@ -8,6 +10,26 @@
     margin-top: 20px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    h2{
+        margin-bottom: 10px;
+    }
+    @include breakpoint(tablet){
+        width:99%;
+       margin-left: 1%;
+       top: 300px;
+    }
+    @include breakpoint(phablet){
+        width:99%;
+       margin-left: 1%;
+       top: 600px;
+       height: 200px;
+    }
+    @include breakpoint(mobile){
+    width:99%;
+       margin-left: 1%;
+       top: 450px;
+       height: 200px;
+    }
 
 }
 

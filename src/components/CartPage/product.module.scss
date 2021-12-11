@@ -1,0 +1,176 @@
+@import '../../styles/constants.module.scss';
+.product{
+    width: 100%; 
+    background-color: rgb(255, 255, 255);
+    padding: 30px 20px;
+    padding-bottom: 0;
+    padding-top:0;
+    @include breakpoint(tablet){
+        width: 100%;
+    }
+    @include breakpoint(mobile){
+        padding: 0;
+    }
+    h3{
+        font-size: 12px;
+        line-height: 16px;
+        color: rgb(51, 130, 194);
+        font-weight: 400;
+    }
+    h6{
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        @include breakpoint(mobile){
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    h5{
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        @include breakpoint(mobile){
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    h4{
+        color: rgb(51, 130, 194);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.headline{
+    margin-bottom: 20px;
+}
+.productBlock{
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
+    border-top:1px solid rgb(223, 223, 223);
+    @include breakpoint(tablet){
+        padding: 10px;
+    }
+    @include breakpoint(phablet){
+        padding: 10px;
+    }
+    @include breakpoint(mobile){
+        padding: 10px;
+    }
+    
+    input{
+        margin-right: 20px;
+       
+    }
+}
+.input{
+    position: relative;
+    top: 60px;
+    @include breakpoint(mobile){
+        top: 40px;
+    }
+}
+
+.image{
+    margin-right: 20px;
+}
+
+.starBlock{
+    display: flex;
+    align-items: flex-start;
+    h1{
+        font-size:12px;
+        line-height: 23px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        @include breakpoint(mobile){
+            display: none;
+        }
+    }
+}
+
+.optionBlock{
+    display: flex;
+    align-items: center;
+    select{
+        margin-right: 20px;
+    }
+    h2{
+        font-size: 12px;
+        line-height: 16px;
+        color:#007185;
+        margin-right: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+        @include breakpoint(phablet){
+            display: none;
+        }
+        @include breakpoint(mobile){
+            display: none;
+        }
+    }
+    h3{
+        @include breakpoint(phablet){
+            display: none;
+        }
+        @include breakpoint(mobile){
+            display: none;
+        }
+    }
+    h4{
+        @include breakpoint(phablet){
+            display: none;
+        }
+        @include breakpoint(mobile){
+            display: none;
+        }
+    }
+}
+.infoBlock{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include breakpoint(mobile){
+        width: 90%;
+    }
+    h5{
+        margin-top: 0;
+        font-size:18px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
+
+.priceBlock{
+    display: flex;
+    align-items: center;
+    h4{
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+.priceB{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+.quantity{
+    width: 70px;
+}

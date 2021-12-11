@@ -1,0 +1,134 @@
+@import '../../styles/constants.module.scss';
+.main{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 120px;
+    @include breakpoint(tablet){
+        margin-top: 100px;
+    }
+    @include breakpoint(phablet){
+        margin-top: 160px;
+    }
+    @include breakpoint(mobile){
+        margin-top: 160px;
+    }
+}
+.block{
+    width: 100%;
+    padding: 30px 20px;
+    margin-bottom: 100px;
+    @include breakpoint(tablet){
+        padding: 10px;
+        margin-bottom: 0px;
+        width: 70%;
+        margin-right: 0;
+    }
+    @include breakpoint(phablet){
+        padding: 10px;
+        margin-bottom: 0px;
+        width: 68%;
+        margin-right: 0;
+    }
+    @include breakpoint(mobile){
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+    border-top:1px solid rgb(216, 216, 216);
+    @include breakpoint(tablet){
+        width: 100%; 
+        margin-right: 0;
+    }
+    @include breakpoint(phablet){
+        width: 100%; 
+        margin-right: 0;
+    }
+    @include breakpoint(mobile){
+        width: 100%; 
+        margin-right: 0;
+    }
+    div{
+        display: flex;
+        margin-left:85%;
+        align-items: center;
+        width: 100%;
+        @include breakpoint(tablet){
+            margin-left:70%; 
+        }
+        @include breakpoint(phablet){
+            margin-left:55%; 
+        }
+        @include breakpoint(mobile){
+            margin-left:20%; 
+        }
+    }
+    h5{
+        font-size:18px;
+        line-height: 24px;
+        font-weight: 400;
+        
+    }
+    h4{
+        font-size:18px;
+        line-height: 24px;
+        font-weight: 600;
+        
+    }
+}
+
+.headline{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0;
+    @include breakpoint(tablet){
+        width: 100%;
+        margin-right: 0; 
+    }
+    @include breakpoint(phablet){
+        width: 100%;
+        margin-right: 0; 
+    }
+
+    @include breakpoint(mobile){
+        width: 100%;
+        margin-right: 0; 
+        padding: 10px;
+    }
+    h5{
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        @include breakpoint(mobile){
+            line-height: 30px;
+        }
+    }
+    h4{
+        color: rgb(51, 130, 194);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.sidebar{
+    width: 20%;
+    @include breakpoint(phablet){
+        width: 30%; 
+    }
+    @include breakpoint(mobile){
+        width: 0%; 
+    }
+}

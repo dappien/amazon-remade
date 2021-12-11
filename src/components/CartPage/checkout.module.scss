@@ -1,0 +1,44 @@
+@import '../../styles/constants.module.scss';
+.checkout{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+      @include breakpoint(tablet){
+        margin-top: 10px;
+    }
+    @include breakpoint(phablet){
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+    }
+    @include breakpoint(mobile){
+        width: 100%;
+    }
+    h2{
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    button{
+        width: 100%;
+        padding: 7.5px 10px;
+        margin-top: 20px;
+        border: none;
+        background-color: #F7CA00;
+        border-radius: 7.5px;
+        cursor: pointer;
+        transition: all 0.4s;
+        &:hover{
+            background-color: #e2bb0c;
+        }
+    }
+}
+.price{
+    display: flex;
+    @include breakpoint(phablet){
+        flex-direction: column;
+    }
+}

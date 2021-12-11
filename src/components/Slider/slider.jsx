@@ -21,10 +21,11 @@ function Slider() {
           <div >
             <Image
               src={image}
-              width={3800}
-              height={1800}
-              objectFit="contain"
-              layout="responsive"
+              // width={3800}
+              // height={1800}
+              width={`${size.width}`<768 ? 3000 : 3800}
+              height={`${size.width}`<768 ? 1500 : 1800}
+              objectFit={`${size.width}`<769 ? "cover" : "contain"}
               className={style.banner}
               alt="image"
               id={id}
@@ -36,7 +37,7 @@ function Slider() {
       </ReactSwipe>
       <div className={style.buttonBlock}>
         <UilAngleLeftB className={style.singleButton} onClick={() => reactSwipeEl.prev()} size={ `${size.width}` < 1025 ? "40" : "80"} />
-        <UilAngleRightB className={style.singleButton}  onClick={() => reactSwipeEl.next()} size={ `${size.width}` < 1025 ? "40" : "80"} />
+        <UilAngleRightB className={style.singleButton} onClick={() => reactSwipeEl.next()} size={ `${size.width}` < 1025 ? "40" : "80"} />
       </div>
    
     </div>

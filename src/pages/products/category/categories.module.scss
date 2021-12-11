@@ -1,0 +1,61 @@
+@import '../../../styles/constants.module.scss';
+.categories{
+  margin: 0;
+ 
+  @include breakpoint(mobile) {
+    margin-top: 150px;
+}
+}
+
+.body {
+  display: flex;
+  margin-top: 105px;
+ 
+  justify-content: flex-start;
+  width: 75%;
+  height: 100%;
+  margin-left: 12.5%;
+  @include breakpoint(tablet) {
+    width: 99%;
+    margin-left: 1%;
+    margin-top: 150px;
+  }
+  @include breakpoint(phablet) {
+    width: 99%;
+    margin-left: 1%;
+    flex-direction: column;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+   margin-left: 0;
+
+  }
+}
+
+.sidebar{
+    width: 18.5%;
+    @include breakpoint(phablet) {
+      display: none;
+    }
+    @include breakpoint(mobile) {
+      display: none;
+    }
+}
+
+.main{
+  
+  width: 81.5%;
+  padding: 20px 0px;
+  background-color: white;
+  margin-left: 10px;
+  height: 100%;
+  @include breakpoint(phablet) {
+    width: 98%;
+    margin-left: 1%;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    margin-left: 0;
+    
+  }
+}
