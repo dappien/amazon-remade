@@ -30,7 +30,7 @@ function Navbar__resp() {
                  </Link>
                 <div className={styles.logoBlock}>
                     <div className={styles.accountBlock}>
-                        <h4 onClick={signIn} >{session ? `${chars[0]}` : "Login"}</h4>
+                        <h4 onClick={() => signIn()} >{session ? `${chars[0]}` : "Login"}</h4>
                         <UilUser size="35"/>
                     </div>
                     <Link href="/cart">
