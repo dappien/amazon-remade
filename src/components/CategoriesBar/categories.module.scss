@@ -7,16 +7,20 @@
     position: fixed;
     top:65px;
     z-index: 9999;
-    padding: 10px;
+    padding: 5px;
     @include breakpoint(phablet){
         overflow-x: scroll;
-        overflow: hidden;
         top:120px;
-       
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
     @include breakpoint(mobile){
-        
+        overflow-x: scroll;
         top:120px;
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
     h3{
         font-size: 14px;
@@ -25,5 +29,11 @@
         font-weight: 400;
         color: white;
         white-space: nowrap;
+        cursor: pointer;
+        padding: 5px;
+        transition: all 4s;
+        &:hover{
+            border:0.1px solid rgb(255, 255, 255);
+        }
     }
 }

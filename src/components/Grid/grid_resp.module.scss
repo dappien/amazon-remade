@@ -3,7 +3,7 @@
 .productGrid_resp{
     width: 100%;
     z-index: 999;
-    height: 200px;
+    height: 140px;
     margin-top: 400px;
     position:absolute;
     @include breakpoint(mobile){
@@ -17,6 +17,7 @@
     display: flex;
     background-color: white;
     padding: 5px;
+    height: 145px;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;

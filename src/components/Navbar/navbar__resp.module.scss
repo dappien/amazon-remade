@@ -22,18 +22,21 @@
     display: flex;
     align-items: center;
     margin-right: 5px;
+   
+}
+.accountBlock{
+    @extend .logoBlock;
     h6{
         background-color: $amazon-darkOrange;
         padding: 1px 5px;
         border-radius: 100%;
         position: absolute;
-        margin-left: 120px;
+        margin-left: 12px;
         margin-bottom: 20px;
     }
-}
-.accountBlock{
-    @extend .logoBlock;
-    h4{
+    h1{ 
+        font-size: 18px;
+        line-height: 24px;
         margin-right: 5px;
         text-transform: uppercase;
     }

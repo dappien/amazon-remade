@@ -6,6 +6,7 @@ import Link from "next/link";
 import React from 'react';
 
 function Populars({ products }) {
+  
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.

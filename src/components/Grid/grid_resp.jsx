@@ -50,11 +50,12 @@ function productGrid_resp(props) {
                {props.headlines[id]}
              </div>
             <Image 
-              width={260} 
-              height={260} 
+              width={560} 
+              height={420} 
               src={product} 
               key={id}
               className={styles.image_resp} 
+              objectFit="cover"
              />
              
           </div>

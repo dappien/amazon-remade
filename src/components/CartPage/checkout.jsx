@@ -36,13 +36,13 @@ function checkout() {
                 <h2>Subtotal(2 items):</h2>
                 <h3>
                     <NumberFormat
-                    value={total}
-                    className="foo"
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                    decimalScale={2}
-                    renderText={(value, props) => <div {...props}>{value}</div>}
+                        value={total}
+                        className="foo"
+                        displayType={'text'}
+                        thousandSeparator={true}
+                        prefix={'$'}
+                        decimalScale={2}
+                        renderText={(value, props) => <div {...props}>{value}</div>}
                     />
                 </h3>
             </div>
@@ -50,6 +50,7 @@ function checkout() {
                 <input type="checkbox" />
                 <label for="vehicle1"> This order contains a gift</label>
             </div>
+            
             {!session ? 
             <button onClick={signIn}>Proceed to checkout</button>
             : 

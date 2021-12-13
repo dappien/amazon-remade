@@ -1,7 +1,6 @@
 import styles from "./order.module.scss";
 import moment from "moment";
 import Image from "next/image";
-import Currency from "./Currency";
 import NumberFormat from "react-number-format";
 function Order({ id, amount, amountShipping, items, timestamp, images }) {
     
@@ -15,7 +14,7 @@ function Order({ id, amount, amountShipping, items, timestamp, images }) {
   } else {
     groupedImages = [...images.map((image) => JSON.parse(image))];
   }
-    console.log(items)
+  const slicedArray = groupedImages.slice(0, 3);
 
 
     function truncate(string,n){
@@ -37,13 +36,13 @@ function Order({ id, amount, amountShipping, items, timestamp, images }) {
             <div>
                 <h2>TOTAL</h2>
                 <NumberFormat
-                    value={amount}
-                    className="foo"
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                    decimalScale={2}
-                    renderText={(value, props) => <div {...props}>{value}</div>}
+                  value={amount}
+                  className="foo"
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                  decimalScale={2}
+                  renderText={(value, props) => <div {...props}>{value}</div>}
                 />  
             </div>
             <div>
@@ -52,7 +51,7 @@ function Order({ id, amount, amountShipping, items, timestamp, images }) {
         </div>
       </div>
       <div className={styles.block} >
-        {groupedImages.map((group) => (
+        {slicedArray.map((group) => (
           <div key={group[1]} className={styles.imageBlock}>
             <Image
               src={`https://fakestoreapi.com/img/${group[1]}`}

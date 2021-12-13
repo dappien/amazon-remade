@@ -5,6 +5,7 @@ import { removeFromBasket, selectTotal } from '../../slices/basketSlice'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { UilTrashAlt } from '@iconscout/react-unicons'
+import NumberFormat from 'react-number-format'
 
 function product({id,title,price,rating,description,category,image}) {
     const dispatch = useDispatch()
@@ -12,7 +13,7 @@ function product({id,title,price,rating,description,category,image}) {
         dispatch(removeFromBasket({id}))
     }
     const total = useSelector(selectTotal)
-    const [value,setValue]=useState(1 );
+  
     return (
         <div className={styles.product}>
             
@@ -38,34 +39,31 @@ function product({id,title,price,rating,description,category,image}) {
                         <h1>(12,123)</h1>  
                     </div>
                    
-                    <div className={styles.optionBlock}>
-                        {/* <input
-                            className={styles.quantity}  
-                            type="number" 
-                            value={value}
-                            placeholder={'Quantity'}
-                            onChange={event => {
-                            setValue(event.target.value)
-                            }}/> */}
-                          
+                    <div className={styles.optionBlock}>      
                         <h2 onClick={removeItemFromBasket} >Delete</h2>
                         <h2>Save</h2>
                         <h2>Compare with similar items</h2>
                     </div>
+
                    </div>
                    <div className={styles.priceB}>
                        <div className={styles.priceBlock}>
-                            <h4>$</h4>
-                            <h4>{price}</h4>
+                           <h4>
+                                <NumberFormat
+                                    value={price}
+                                    className="foo"
+                                    displayType={'text'}
+                                    thousandSeparator={true}
+                                    prefix={'$'}
+                                    decimalScale={2}
+                                    renderText={(value, props) => <div {...props}>{value}</div>}
+                                />
+                            </h4>
                        </div>
                        <div>
                            <UilTrashAlt onClick={removeItemFromBasket} />
                        </div>
-                        
                    </div>
-                    
-                    
-                   
                </div>
             </div>
         </div>

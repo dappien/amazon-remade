@@ -31,7 +31,7 @@ function Product(props) {
         ) : (
           <Image
             src={singleImages}
-            width={320}
+            width={360}
             height={300}
             className={style.singleImage}
             alt="image"
