@@ -40,12 +40,12 @@ function Navbar__resp() {
           {session && (
             <>
               <Link href="/cart">
-               
+                <>
                   <div className={styles.accountBlock}>
                     <UilShoppingCartAlt size="35" />
                     <h6>{items?.length}</h6>
                   </div>
-               
+                </>
               </Link>
 
               <Link href="/orders">
