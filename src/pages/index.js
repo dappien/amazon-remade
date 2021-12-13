@@ -136,6 +136,7 @@ export default function Home({ products }) {
                   headline="Holiday Gifts"
                   images={imageSources2}
                   headlines={headlines2}
+                  category="men's clothing"
                 />) : ("")
               }
               {(size.width < 769 && !session && size.width > 600) &&
@@ -158,21 +159,25 @@ export default function Home({ products }) {
               <Grid
                 headline="Comfy styles for her"
                 singleImages={singleImage1}
+                category="women's clothing"
               />
 
               <Grid
                 headline="Comfy styles for her"
                 singleImages={singleImage2}
+                category="men's clothing"
               />
 
               <Grid
                 headline="Comfy styles for her"
                 singleImages={singleImage3}
+                category="jewelery"
               />
 
               <Grid
                 headline="Comfy styles for her"
                 singleImages={singleImage4}
+                category="electronics"
               />
               </div>
           
