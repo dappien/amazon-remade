@@ -1,0 +1,89 @@
+@import '../../styles/constants.module.scss';
+.order{
+    border: 1px solid rgb(173, 173, 173);
+    margin-bottom: 20px;
+}
+.block{
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    
+}
+
+.infoBlock{
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    position: relative;
+    right: 0;
+    margin-left: 45%;
+    padding: 2.5px 20px;
+    background-color: rgb(177, 177, 177);
+    border:1px solid gray;
+    border-radius: 15px;
+    @include breakpoint(mobile){
+        width: 100%;
+        margin-left: 0;
+        padding: 2.5px 10px;
+    }
+    h2{ 
+        font-size:16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    h3{
+        font-size:16px;
+        line-height: 24px;
+        font-weight: 500;
+
+    }
+
+}
+
+.details{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    
+    justify-content: space-between;
+    h2{
+        font-size:16px;
+        line-height: 24px;
+    }
+    h3{
+        font-size:16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    h6{
+        font-size:16px;
+        line-height: 16px;
+        font-weight: 400;
+        margin-top: 24px;
+        color: blue;
+    }
+}
+
+.imageBlock{
+    width: 85%;
+    padding: 10px;
+}
+.more{
+    width: 15%;
+    right:0;
+    height: 220px;
+    background-color: rgb(250, 188, 117);
+    position: relative;
+    transition: all 0.4s;
+    &:hover{
+        background-color: rgb(241, 166, 79);
+    }
+    h2{
+        margin-top: 90px;
+    }
+}

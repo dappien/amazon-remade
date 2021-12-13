@@ -1,0 +1,17 @@
+@import '../../styles/constants.module.scss';
+.block{
+    margin-top: 156px;
+    width: 75%;
+    margin-left: 12.5%;
+    @include breakpoint(phablet){
+        width: 98%;
+        margin-left: 1%;
+    }
+    @include breakpoint(mobile){
+        width: 100%;
+        margin-left: 0;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+}
