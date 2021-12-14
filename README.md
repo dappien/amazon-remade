@@ -13,7 +13,7 @@ The project deployed on Vercel :
 [Watch Demo on Youtube](https://www.youtube.com/watch?v=dQKNGEosNM4)
 
 
-[![Watch Demo on Youtube] ![scrnli_12_14_2021_8-46-22 AM](https://user-images.githubusercontent.com/93555187/145941245-9305aefb-83d2-4de2-aa76-178d6babec1f.png)
+![scrnli_12_14_2021_8-46-22 AM](https://user-images.githubusercontent.com/93555187/145941245-9305aefb-83d2-4de2-aa76-178d6babec1f.png)
 
 
 ## SCREENSHOTS
